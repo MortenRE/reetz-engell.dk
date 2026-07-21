@@ -225,44 +225,47 @@ a:hover {
   margin-right: auto;
 }
 
-/* To-lags wordmark: fornavn som fin tracket kicker over efternavnet i
-   den store display-serif. */
+/* SVG-wordmark: fornavnet er tracket flush (textLength) til præcis samme
+   bredde som efternavnet i display-serif. Et hårfint accent-undermærke og
+   accent-farvet kicker toner frem ved hover/fokus. */
 .masthead-navn {
   display: inline-block;
   text-decoration: none;
-  color: var(--tekst);
-  line-height: 1;
+  line-height: 0;
 }
 
-.masthead-fornavn {
+.masthead-wordmark {
   display: block;
+  width: clamp(8.4rem, 27vw, 10.6rem);
+  height: auto;
+  overflow: visible;
+}
+
+.wm-kicker {
   font-family: var(--skrift-broed);
-  font-size: 0.6rem;
   font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.26em;
-  color: var(--daemp);
-  margin: 0 0 0.34rem 0.12em;
+  fill: var(--daemp);
 }
 
-.masthead-efternavn {
-  display: block;
+.wm-navn {
   font-family: var(--skrift-display);
-  font-size: 1.75rem;
   font-weight: 600;
-  letter-spacing: -0.015em;
-  color: var(--tekst);
+  fill: var(--tekst);
 }
 
-.masthead-navn:hover .masthead-efternavn {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.22em;
-  text-decoration-color: var(--accent);
+.wm-rule {
+  stroke: var(--accent);
+  opacity: 0;
 }
 
-.masthead-navn:hover .masthead-fornavn {
-  color: var(--accent);
+.masthead-navn:hover .wm-kicker,
+.masthead-navn:focus-visible .wm-kicker {
+  fill: var(--accent);
+}
+
+.masthead-navn:hover .wm-rule,
+.masthead-navn:focus-visible .wm-rule {
+  opacity: 0.85;
 }
 
 .masthead-foto {
