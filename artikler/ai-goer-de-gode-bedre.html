@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<!-- Genereret fra docs/kladder/ai-goer-de-gode-bedre.md (kilde-reglen:
+     rettelser sker i md-filen, aldrig direkte i artikeltekst her). -->
+<html lang="da" data-rod="..">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI gør de gode bedre. Og de dårlige dårligere. · Reetz-Engell</title>
+  <meta name="description" content="AI reducerer ikke forskellen mellem stærke og svage softwareorganisationer. Den øger den.">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Reetz-Engell">
+  <meta property="og:locale" content="da_DK">
+  <meta property="og:title" content="AI gør de gode bedre. Og de dårlige dårligere.">
+  <meta property="og:description" content="AI reducerer ikke forskellen mellem stærke og svage softwareorganisationer. Den øger den.">
+  <meta property="og:image" content="https://reetz-engell.dk/assets/img/figur-1-samme-vaerktoej.png">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS-feed" href="../feed.xml">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../assets/fonts/newsreader-latin.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../assets/fonts/newsreader-italic-latin.woff2">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <script>(function(){try{var t=localStorage.getItem("tema");if(t)document.documentElement.dataset.tema=t}catch(e){}})()</script>
+</head>
+<body>
+
+<div class="fremdrift" aria-hidden="true"></div>
+
+<header class="side-hoved">
+  <div class="indhold side-hoved-indre">
+    <div class="masthead">
+      <a class="masthead-navn" href="../index.html">Reetz-Engell</a>
+    </div>
+    <nav class="hovednav" aria-label="Hovednavigation">
+      <a href="index.html">Artikler</a>
+      <a href="../om.html">Om</a>
+      <button class="tema-knap" type="button" hidden aria-label="Skift mellem lyst og mørkt tema">
+        <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5 A6.5 6.5 0 0 1 8 14.5 Z" fill="currentColor"/></svg>
+      </button>
+    </nav>
+    <form class="soegning" action="index.html" method="get" role="search" hidden>
+      <label class="sr-kun" for="soegefelt">Søg i artikler</label>
+      <input type="search" id="soegefelt" name="q" placeholder="Søg i artikler …" autocomplete="off">
+    </form>
+  </div>
+  <div class="soegeresultater indhold" hidden aria-live="polite"></div>
+</header>
+
+<main class="indhold">
+  <article class="artikel maal">
+
+    <header class="artikel-hoved">
+      <p class="seriemaerke">Når hastighed ikke længere giver et forspring · Del 1: Hypotesen</p>
+      <h1 class="artikel-titel">AI gør de gode bedre. Og de dårlige dårligere.</h1>
+      <p class="meta"><time datetime="2026-07-21">21. juli 2026</time> · 7 min. læsning · AI · Ledelse · Softwareudvikling</p>
+    </header>
+
+    <div class="artikel-krop">
+
+      <p>Da ChatGPT blev allemandseje i sidste halvdel af 2022, blev det tydeligt, at softwareudvikling stod over for et markant skifte. Opgaver, der før bandt vores dygtigste udviklere i dagevis, kunne pludselig løses på en eftermiddag. For første gang begyndte selve implementeringen at holde op med at være softwareudviklingens dominerende omkostning.</p>
+
+      <p>Det afgørende er ikke, at koden bliver skrevet hurtigere. Det er, hvad der sker, når det, der historisk var det dyreste led i softwareudvikling, pludselig ikke længere er det. Når næsten alle kan bygge software hurtigere end nogensinde, flytter værdien sig uundgåeligt.</p>
+
+      <p>Det rejser et interessant spørgsmål: Hvor skabes værdien, når implementeringen ikke længere er den primære begrænsning? Min arbejdshypotese er enkel: AI ændrer ikke fundamentalt på, hvad softwareudvikling er. Allerede i 80'erne blev det formuleret, at softwareudviklingens egentlige problem ikke ligger i at skrive selve koden, men i at gennemtænke og præcisere det, som koden skal udtrykke. AI ændrer ikke på det. Den ændrer omkostningerne ved eksekvering: kodning, test, deployment og drift. Og når eksekvering bliver billigere, bliver forståelse, beslutninger og kendskab til domænet tilsvarende vigtigere og dyrere at mangle.</p>
+
+      <!-- FIGUR 3 (VALGFRI): Nem at fjerne - slet hele <figure>-blokken
+           herunder. Kilde: tools/eksport/figur-3-flaskehalsen.html -->
+      <figure class="figur">
+        <!-- Bred variant (vandret) - vises på skærme over 45em -->
+        <svg class="kun-bred" viewBox="0 0 520 200" role="img" aria-labelledby="fig3b-titel fig3b-besk" xmlns="http://www.w3.org/2000/svg">
+          <title id="fig3b-titel">Flaskehalsen flytter sig</title>
+          <desc id="fig3b-besk">Før og nu vist som to strømme af tråde gennem kæden forståelse, beslutninger, implementering og værdi. Før: strømmen er bred hele vejen, men klemmes hårdt sammen ved implementering. Nu: strømmen er klemt allerede ved forståelse og løber bredt resten af vejen. Flaskehalsen er flyttet fra implementering til forståelse.</desc>
+          <text class="fig-ord" x="90" y="38" text-anchor="middle">Forståelse</text>
+          <text class="fig-ord" x="205" y="38" text-anchor="middle">Beslutninger</text>
+          <text class="fig-ord-accent" x="330" y="38" text-anchor="middle">Implementering</text>
+          <text class="fig-ord" x="455" y="38" text-anchor="middle">Værdi</text>
+          <text class="fig-under" x="8" y="68">Før</text>
+          <g stroke="var(--tekst)" stroke-opacity="0.6" fill="none" stroke-width="1" stroke-linecap="round">
+            <path d="M30,52 C140,52 260,52 330,61.8 C400,52 445,52 490,52"/>
+            <path d="M30,58 C140,58 260,58 330,62.9 C400,58 445,58 490,58"/>
+            <path d="M30,64 C140,64 260,64 330,64 C400,64 445,64 490,64"/>
+            <path d="M30,70 C140,70 260,70 330,65.1 C400,70 445,70 490,70"/>
+            <path d="M30,76 C140,76 260,76 330,66.2 C400,76 445,76 490,76"/>
+            <path d="M484,60 L492,64 L484,68"/>
+          </g>
+          <g class="fig-accent-streg" stroke-width="1.5">
+            <line x1="330" y1="46" x2="330" y2="57"/>
+            <line x1="330" y1="71" x2="330" y2="82"/>
+          </g>
+          <text class="fig-ord-accent" x="90" y="126" text-anchor="middle">Forståelse</text>
+          <text class="fig-ord" x="205" y="126" text-anchor="middle">Beslutninger</text>
+          <text class="fig-ord" x="330" y="126" text-anchor="middle">Implementering</text>
+          <text class="fig-ord" x="455" y="126" text-anchor="middle">Værdi</text>
+          <text class="fig-under" x="8" y="156">Nu</text>
+          <g stroke="var(--tekst)" stroke-opacity="0.6" fill="none" stroke-width="1" stroke-linecap="round">
+            <path d="M30,146 C55,147.9 72,149.8 90,149.8 C160,140 250,140 330,140 C390,140 445,140 490,140"/>
+            <path d="M30,149 C55,150 72,150.9 90,150.9 C160,146 250,146 330,146 C390,146 445,146 490,146"/>
+            <path d="M30,152 C55,152 72,152 90,152 C160,152 250,152 330,152 C390,152 445,152 490,152"/>
+            <path d="M30,155 C55,154 72,153.1 90,153.1 C160,158 250,158 330,158 C390,158 445,158 490,158"/>
+            <path d="M30,158 C55,156.1 72,154.2 90,154.2 C160,164 250,164 330,164 C390,164 445,164 490,164"/>
+            <path d="M484,148 L492,152 L484,156"/>
+          </g>
+          <g class="fig-accent-streg" stroke-width="1.5">
+            <line x1="90" y1="134" x2="90" y2="145"/>
+            <line x1="90" y1="159" x2="90" y2="170"/>
+          </g>
+        </svg>
+        <!-- Smal variant (lodret) - vises på mobil -->
+        <svg class="kun-smal" viewBox="0 0 360 214" role="img" aria-labelledby="fig3s-titel fig3s-besk" xmlns="http://www.w3.org/2000/svg">
+          <title id="fig3s-titel">Flaskehalsen flytter sig</title>
+          <desc id="fig3s-besk">Før og nu vist som to lodrette strømme af tråde gennem kæden forståelse, beslutninger, implementering og værdi. Før: strømmen er bred hele vejen, men klemmes hårdt sammen ved implementering. Nu: strømmen er klemt allerede ved forståelse og løber bredt resten af vejen. Flaskehalsen er flyttet fra implementering til forståelse.</desc>
+          <text class="fig-under" x="58" y="28" text-anchor="middle">Før</text>
+          <text class="fig-under" x="228" y="28" text-anchor="middle">Nu</text>
+          <g stroke="var(--tekst)" stroke-opacity="0.6" fill="none" stroke-width="1" stroke-linecap="round">
+            <path d="M50,40 C50,80 50,120 56.4,138 C50,156 50,176 50,196"/>
+            <path d="M54,40 C54,80 54,120 57.2,138 C54,156 54,176 54,196"/>
+            <path d="M58,40 C58,80 58,120 58,138 C58,156 58,176 58,196"/>
+            <path d="M62,40 C62,80 62,120 58.8,138 C62,156 62,176 62,196"/>
+            <path d="M66,40 C66,80 66,120 59.6,138 C66,156 66,176 66,196"/>
+            <path d="M54,190 L58,198 L62,190"/>
+          </g>
+          <g class="fig-accent-streg" stroke-width="1.5">
+            <line x1="44" y1="138" x2="52" y2="138"/>
+            <line x1="64" y1="138" x2="72" y2="138"/>
+          </g>
+          <text class="fig-ord" x="76" y="62">Forståelse</text>
+          <text class="fig-ord" x="76" y="102">Beslutninger</text>
+          <text class="fig-ord-accent" x="76" y="142">Implementering</text>
+          <text class="fig-ord" x="76" y="182">Værdi</text>
+          <g stroke="var(--tekst)" stroke-opacity="0.6" fill="none" stroke-width="1" stroke-linecap="round">
+            <path d="M224,40 C225,46 226.4,52 226.4,58 C220,90 220,150 220,196"/>
+            <path d="M226,40 C226.6,46 227.2,52 227.2,58 C224,90 224,150 224,196"/>
+            <path d="M228,40 C228,46 228,52 228,58 C228,90 228,150 228,196"/>
+            <path d="M230,40 C229.4,46 228.8,52 228.8,58 C232,90 232,150 232,196"/>
+            <path d="M232,40 C231.4,46 229.6,52 229.6,58 C236,90 236,150 236,196"/>
+            <path d="M224,190 L228,198 L232,190"/>
+          </g>
+          <g class="fig-accent-streg" stroke-width="1.5">
+            <line x1="214" y1="58" x2="222" y2="58"/>
+            <line x1="234" y1="58" x2="242" y2="58"/>
+          </g>
+          <text class="fig-ord-accent" x="246" y="62">Forståelse</text>
+          <text class="fig-ord" x="246" y="102">Beslutninger</text>
+          <text class="fig-ord" x="246" y="142">Implementering</text>
+          <text class="fig-ord" x="246" y="182">Værdi</text>
+        </svg>
+      </figure>
+
+      <p>Denne første artikel introducerer hypotesen og de begreber, som resten af serien vil folde ud.</p>
+
+      <h2>Samme værktøj, men med det modsatte udfald</h2>
+
+      <p>De seneste par år har AI i stadig højere grad været diskuteret som et værktøj. Debatten har primært kredset om redskabet: Hvilken model koder bedst? Hvilken agent er hurtigst? Hvad kan vi automatisere væk?</p>
+
+      <p>Det er alle sammen relevante spørgsmål, men de fleste overser det, der efter min opfattelse er den mest interessante observation.</p>
+
+      <p>Nogle udviklingsafdelinger har med AI opnået markante løft i produktiviteten. Andre oplever, at AI hjælper dem til at producere mere kode, men ikke nødvendigvis bedre software. Nogle ser højere hastighed og kvalitet i deres leverancer, mens andre ser flere fejl, større teknisk gæld og løsninger, der passer dårligere til forretningen.</p>
+
+      <p>Hvis AI i sig selv var løsningen, så burde forskellen mellem de grupper være betydeligt mindre. Den er større, og forklaringen er enkel: <strong><em>AI forstærker det et udviklingsteam allerede gør. Og det gælder ikke kun implementeringen</em></strong>. Når prototyper, tests og eksperimenter bliver billigere, bliver det også muligt at lære hurtigere. AI accelererer derfor både eksekveringen og arbejdet med at opbygge forståelse. Hvor meget værdi det skaber, afhænger af afdelingens evne til at omsætte denne læring til bedre beslutninger og bedre software.</p>
+
+      <p>Det skyldes, at AI ikke skaber forståelse af sig selv. Den eksekverer på den forståelse, der allerede findes, og denne forståelse opstår fortsat gennem mennesker. Gennem domænekendskab, dialog med forretningen, arkitektoniske beslutninger og en fælles forståelse af det problem, der skal løses, eller den værdi, der skal skabes.</p>
+
+      <p>I en organisation med en stærk fælles forståelse accelererer AI derfor det rigtige: god domæneforståelse, der bliver til klare krav, der bliver til god software, hurtigere. I en organisation med en svag fælles forståelse accelererer den det forkerte: Antagelser, der aldrig blev udfordret, bliver til kode, før nogen når at stille spørgsmålet. Samme værktøj. Modsatte udfald.</p>
+
+      <!-- FIGUR 1: Artiklens signaturfigur ("Trådene"). PNG-versionen er
+           og:image. Kilde: tools/eksport/figur-1-samme-vaerktoej.html -->
+      <figure class="figur">
+        <svg viewBox="0 0 360 248" role="img" aria-labelledby="fig1-titel fig1-besk" xmlns="http://www.w3.org/2000/svg">
+          <title id="fig1-titel">Samme værktøj. Modsatte udfald.</title>
+          <desc id="fig1-besk">Konceptfigur: Et bundt af mange tynde tråde løber ind mod en lodret stiplet markering mærket AI. Efter markeringen samles halvdelen af trådene i et ordnet, stigende bånd mærket stærk fælles forståelse, mens resten spredes nedad, falmer og trævler op, mærket svag fælles forståelse. Mellemrummet mellem de to strømme vokser mod højre og er mærket "Forskellen øges".</desc>
+          <line class="fig-akse" stroke-width="0.9" stroke-dasharray="3 4" x1="120" y1="20" x2="120" y2="230"/>
+          <text class="fig-navn" x="120" y="12" text-anchor="middle">AI</text>
+          <g stroke="var(--accent)" fill="none" stroke-width="1.05" stroke-linecap="round" opacity="0.95">
+            <path d="M0,100 C70,99 105,101 122,100 C190,95 262,52 340,26"/>
+            <path d="M0,103 C68,103 106,104 122,103 C192,98 264,57 340,31"/>
+            <path d="M0,107 C72,106 104,107 122,107 C194,102 266,62 340,37"/>
+            <path d="M0,111 C66,110 108,112 122,111 C196,106 268,68 340,42"/>
+            <path d="M0,114 C74,115 102,113 122,114 C198,110 270,74 340,48"/>
+            <path d="M0,118 C69,117 107,119 122,118 C200,114 272,80 340,53"/>
+            <path d="M0,121 C71,122 103,120 122,121 C202,118 274,86 340,58"/>
+          </g>
+          <g stroke="var(--tekst)" fill="none" stroke-width="1" stroke-linecap="round">
+            <path opacity="0.75" d="M0,106 C70,107 106,106 122,107 C190,112 260,132 344,150"/>
+            <path opacity="0.7"  d="M0,110 C68,109 104,111 122,110 C192,118 262,146 338,168"/>
+            <path opacity="0.6"  d="M0,117 C72,118 105,116 122,117 C194,126 264,162 344,186"/>
+            <path opacity="0.55" stroke-dasharray="4 3" d="M0,124 C66,123 108,125 122,124 C196,136 266,180 330,201"/>
+            <path opacity="0.5"  d="M0,128 C74,129 103,127 122,128 C198,142 268,196 342,214"/>
+            <path opacity="0.45" stroke-dasharray="2 3" d="M0,132 C69,131 106,133 122,132 C200,148 258,204 322,222"/>
+            <path opacity="0.38" d="M0,135 C71,136 104,134 122,135 C202,152 270,210 340,228"/>
+          </g>
+          <text class="fig-etiket" x="342" y="16" text-anchor="end">Stærk fælles forståelse</text>
+          <text class="fig-etiket" x="342" y="243" text-anchor="end">Svag fælles forståelse</text>
+          <text class="fig-etiket-accent" x="338" y="115" text-anchor="end">Forskellen øges</text>
+        </svg>
+      </figure>
+
+      <p>Hvis dette holder, så følger der en interessant konsekvens. AI reducerer ikke forskellen mellem stærke og svage softwareorganisationer. Den øger den.</p>
+
+      <p>Det kan lyde som et paradoks, for på individniveau peger flere undersøgelser på, at AI ofte løfter de mindst erfarne udviklere mest, men en organisation er ikke summen af individer. En organisation med en svag fælles forståelse accelererer ikke kun produktion af kode - den accelererer også produktion af misforståelser, fejlbeslutninger og teknisk gæld.</p>
+
+      <h2>Hvordan skaber vi en fælles forståelse, og hvordan gør vi den eksekverbar?</h2>
+
+      <p>I denne artikel er der flere gange brugt ordet <em>forståelse</em>. Det er bevidst. Ordet skal ikke bruges som en blød eller filosofisk størrelse, men bruges som en samlet betegnelse for den viden og de beslutninger, der gør det muligt at omsætte et behov til en løsning, der skaber værdi. Det kan f.eks. være forståelsen af forretningsregler, domænets begreber, de krav løsningen skal opfylde og hvordan de testes eller de arkitektoniske beslutninger, den bygger på.</p>
+
+      <!-- FIGUR 2 (flyder til højre på brede skærme, fuld bredde på mobil):
+           Seriens rammefigur - genbruges og udbygges i del 2 og 3.
+           Placeret ved afsnittet, den beskriver, så teksten wrapper den.
+           Kilde: tools/eksport/figur-2-mentale-modeller.html -->
+      <figure class="figur figur-flyd">
+        <svg viewBox="0 0 340 330" role="img" aria-labelledby="fig2s-titel fig2s-besk" xmlns="http://www.w3.org/2000/svg">
+          <title id="fig2s-titel">De to mentale modeller</title>
+          <desc id="fig2s-besk">Overskriften Den fælles forståelse spænder over to felter, der står over hinanden. Øverst Shared Mental Model med underteksten Hvad? Hvorfor? og stikordene problem, værdi samt regler og behov. Nederst Executable Mental Model med underteksten Hvordan? og stikordene eksekverbar af mennesker og eksekverbar af agenter. En pil mærket "omsættes til" peger fra det øverste felt mod det nederste.</desc>
+          <text class="fig-etiket" x="170" y="26" text-anchor="middle">Den fælles forståelse</text>
+          <g class="fig-akse" stroke-width="1">
+            <line x1="14" y1="22" x2="96" y2="22"/>
+            <line x1="244" y1="22" x2="326" y2="22"/>
+            <line x1="14" y1="22" x2="14" y2="32"/>
+            <line x1="326" y1="22" x2="326" y2="32"/>
+          </g>
+          <rect class="fig-boks" x="14" y="44" width="312" height="108" stroke-width="1"/>
+          <text class="fig-titel" x="30" y="74">Shared Mental Model</text>
+          <text class="fig-under" x="30" y="94">Hvad? Hvorfor?</text>
+          <text class="fig-punkt" x="30" y="126">Problem · Værdi · Regler &amp; behov</text>
+          <g class="fig-akse" stroke-width="1">
+            <line x1="170" y1="152" x2="170" y2="184"/>
+            <path d="M166,178 L170,186 L174,178"/>
+          </g>
+          <text class="fig-under" x="182" y="172">omsættes til</text>
+          <rect class="fig-boks" x="14" y="194" width="312" height="124" stroke-width="1"/>
+          <text class="fig-titel" x="30" y="224">Executable Mental Model</text>
+          <text class="fig-under" x="30" y="244">Hvordan?</text>
+          <text class="fig-punkt" x="30" y="276">Eksekverbar af mennesker</text>
+          <text class="fig-punkt" x="30" y="296">Eksekverbar af agenter</text>
+        </svg>
+      </figure>
+
+      <p>Den forståelse findes ikke ét sted. Efter min opfattelse består den af to forskellige, men tæt forbundne mentale modeller.</p>
+
+      <ul>
+        <li><strong>Shared Mental Model</strong> - <em>Hvad? Hvorfor?</em><br>
+        Beskriver den fælles forståelse af problemet: Hvad skal bygges? Hvilken værdi skal skabes? Hvilke regler og behov skal løsningen opfylde?</li>
+        <li><strong>Executable Mental Model</strong> - <em>Hvordan?</em><br>
+        Beskriver hvordan den fælles forståelse omsættes til en model der kan eksekveres af enten mennesker eller agenter.</li>
+      </ul>
+
+      <p>Begge modeller findes allerede i enhver udviklingsafdeling. Spørgsmålet er kun, hvor eksplicitte de er. Den fælles forståelse lever typisk i kravbeskrivelser, på whiteboards og i hovederne på de mest erfarne, og forsvinder med dem, når de skifter job eller pensioneres. Den eksekverbare model kender de fleste i andre mindre dele: en automatiseret test, der udtrykker en forretningsregel, er et lille stykke forståelse, som både et menneske og en agent kan eksekvere og verificere. Forestil dig så hele domænet beskrevet på denne måde.</p>
+
+      <p>Disse to modeller danner tilsammen rammen for at forstå, hvordan AI ændrer softwareudvikling, når implementeringen ikke længere er den primære begrænsning.</p>
+
+      <h2>Hvor skabes den næste konkurrencefordel?</h2>
+
+      <p>Efter min opfattelse er svaret <em>forståelse.</em> Forståelse for forretningen, domænet og hvor værdien skabes. Det er ikke ny indsigt. Forståelse har altid været kernen i softwareudvikling. Det nye er, at den ikke længere kan gemme sig bag selve implementeringen. Så længe eksekvering var dyr, druknede forskellen mellem stærk og svag forståelse i omkostningerne forbundet med eksekveringen. Den undskyldning er væk nu. Når eksekvering er billig, skalerer omkostningen ved misforståelser: En organisation, der eksekverer hurtigt på en forkert forståelse, bygger ikke bedre software. Den bygger det forkerte hurtigere, og betaler for det med teknisk gæld, tilbageløb på leverancerne og tabt <em>time-to-market.</em></p>
+
+      <p>AI kan være en stærk sparringspartner i arbejdet med at opbygge denne forståelse. Den kan hjælpe med at analysere information, udfordre antagelser, identificere mønstre og gøre viden mere tilgængelig. Den gør det samtidig billigere at eksperimentere og lære af resultaterne. Derfor ligger den egentlige konkurrencefordel ikke i at have den bedste forståelse fra starten, men i evnen til kontinuerligt at opbygge, dele og forbedre den - hurtigere end andre.</p>
+
+      <p>Det er netop derfor, de to ovenstående modeller bliver centrale. De er ikke dokumentation for dokumentationens skyld, men de er mekanismer til at opbygge og vedligeholde en fælles forståelse, som gør udviklingsteams i stand til at få markant mere værdi ud af AI.</p>
+
+      <p>I de kommende artikler folder jeg de to modeller ud: først hvordan man bygger en fælles forståelse, der kan deles på tværs af fagligheder, og derefter hvordan man gør den eksekverbar for både mennesker og agenter. For flaskehalsen er flyttet, og den flytter sig ikke tilbage.</p>
+
+      <!-- MANDAGSTESTEN: Diskret "prøv selv"-markering af artiklens sidste afsnit -->
+      <div class="proev-selv">
+        <p>Hvis du vil teste, hvor din egen organisation eller afdeling står, kan du starte i morgen: Tag en feature I har leveret for nylig. Spørg, hver for sig, en udvikler, en produktejer og en fra forretningen, hvilket problem den løser, og hvordan deres forståelse af den er. Får du tre svar, der ligner hinanden, står jeres fælles forståelse stærkt. Får du tre forskellige, har du fundet jeres reelle flaskehals. Og AI fjerner den ikke - den gør den bare dyrere.</p>
+      </div>
+
+    </div>
+
+    <footer class="artikel-fod">
+
+      <nav class="serie-nav" aria-label="Serienavigation">
+        <p><span class="serie-nav-retning">Næste i serien</span><span>Shared Mental Model<span class="kommer-maerke">Kommer</span></span></p>
+      </nav>
+
+      <!-- RELATEREDE ARTIKLER: Tilføjes her (og i artikler.json feltet
+           "relaterede"), når der findes flere artikler at pege på. -->
+
+    </footer>
+
+  </article>
+</main>
+
+<!-- Erklærings-ribbon: fast nederst til højre. Klik viser den fulde besked.
+     Ren HTML - virker uden JS (JS lukker blot ved klik udenfor/Escape). -->
+<details class="erklaering">
+  <summary>Skrevet af mig</summary>
+  <div class="erklaering-tekst" role="note">
+    <p class="erklaering-rubrik">Artiklerne her er skrevet af mig. Ikke af AI.</p>
+    <p>Jeg bruger AI som sparringspartner til at udfordre argumenterne, og til at bygge denne blog og de figurer, du ser undervejs. Holdningerne, fejlene og de sidste kald er mine egne.</p>
+    <p><a href="../om.html#skrevet-af-mig">Læs mere på om-siden</a></p>
+  </div>
+</details>
+
+<footer class="side-fod">
+  <div class="indhold">
+    <p class="side-fod-links"><a href="index.html">Artikler</a> · <a href="../om.html">Om</a> · <a href="../feed.xml">RSS</a> · <a href="https://www.linkedin.com/in/mreetzengell/" rel="me noopener">LinkedIn</a></p>
+  </div>
+</footer>
+
+<script src="../assets/js/search.js" defer></script>
+</body>
+</html>

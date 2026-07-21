@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- RSS-feedet vedligeholdes i hånden: Ny artikel = nyt <item> øverst.
+     Se README.md. -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Morten Reetz-Engell</title>
+    <link>https://reetz-engell.dk/</link>
+    <atom:link href="https://reetz-engell.dk/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Artikelserie om hvordan AI flytter værdien i softwareudvikling fra eksekvering til forståelse.</description>
+    <language>da</language>
+    <lastBuildDate>Tue, 21 Jul 2026 08:00:00 +0200</lastBuildDate>
+    <item>
+      <title>AI gør de gode bedre. Og de dårlige dårligere.</title>
+      <link>https://reetz-engell.dk/artikler/ai-goer-de-gode-bedre.html</link>
+      <guid isPermaLink="true">https://reetz-engell.dk/artikler/ai-goer-de-gode-bedre.html</guid>
+      <pubDate>Tue, 21 Jul 2026 08:00:00 +0200</pubDate>
+      <description>Del 1 af serien "Når hastighed ikke længere giver et forspring": AI reducerer ikke forskellen mellem stærke og svage softwareorganisationer. Den øger den.</description>
+    </item>
+  </channel>
+</rss>

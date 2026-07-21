@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="da" data-rod=".">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Morten Reetz-Engell</title>
+  <meta name="description" content="Artikelserie om hvordan AI flytter værdien i softwareudvikling fra eksekvering til forståelse. Skrevet til CTO'er, CIO'er og tech-ledere.">
+
+  <!-- Open Graph. og:image kræver absolutte URL'er. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Reetz-Engell">
+  <meta property="og:locale" content="da_DK">
+  <meta property="og:title" content="Morten Reetz-Engell">
+  <meta property="og:description" content="Artikelserie om hvordan AI flytter værdien i softwareudvikling fra eksekvering til forståelse.">
+  <meta property="og:image" content="https://reetz-engell.dk/assets/img/figur-1-samme-vaerktoej.png">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS-feed" href="feed.xml">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="assets/fonts/newsreader-latin.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="assets/fonts/newsreader-italic-latin.woff2">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <!-- Flicker-frit manuelt tema: læser valget FØR første maling af siden -->
+  <script>(function(){try{var t=localStorage.getItem("tema");if(t)document.documentElement.dataset.tema=t}catch(e){}})()</script>
+</head>
+<body>
+
+<header class="side-hoved">
+  <div class="indhold side-hoved-indre">
+    <div class="masthead">
+      <!-- VARIANT MED FOTO I HEADER: Indsæt en <img class="masthead-foto"
+           src="assets/img/profil.jpg" alt="" width="400" height="400"> FØRST
+           inde i a-tagget herunder. -->
+      <a class="masthead-navn" href="index.html">Reetz-Engell</a>
+    </div>
+    <nav class="hovednav" aria-label="Hovednavigation">
+      <a href="artikler/index.html">Artikler</a>
+      <a href="om.html">Om</a>
+      <!-- Tema-knappen er skjult uden JS; prefers-color-scheme gælder stadig -->
+      <button class="tema-knap" type="button" hidden aria-label="Skift mellem lyst og mørkt tema">
+        <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5 A6.5 6.5 0 0 1 8 14.5 Z" fill="currentColor"/></svg>
+      </button>
+    </nav>
+    <!-- Søgefeltet er skjult uden JS. Fallback: arkivsiden viser alt. -->
+    <form class="soegning" action="artikler/index.html" method="get" role="search" hidden>
+      <label class="sr-kun" for="soegefelt">Søg i artikler</label>
+      <input type="search" id="soegefelt" name="q" placeholder="Søg i artikler …" autocomplete="off">
+    </form>
+  </div>
+  <div class="soegeresultater indhold" hidden aria-live="polite"></div>
+</header>
+
+<main class="indhold forside">
+
+  <!-- ======================================================================
+       FREMHÆVET ARTIKEL
+       Styres af "featured": true i assets/data/artikler.json.
+       Vil du fremhæve en anden artikel: Flyt featured-flaget i artikler.json
+       og udskift indholdet i denne blok (titel, link, resumé, meta, figur).
+       ====================================================================== -->
+  <article class="fremhaevet">
+    <div class="fremhaevet-tekst">
+      <p class="seriemaerke">Når hastighed ikke længere giver et forspring · Del 1: Hypotesen</p>
+      <h1 class="fremhaevet-titel"><a href="artikler/ai-goer-de-gode-bedre.html">AI gør de gode bedre. Og de dårlige dårligere.</a></h1>
+      <p class="fremhaevet-resume">AI reducerer ikke forskellen mellem stærke og svage softwareorganisationer. Den øger den.</p>
+      <p class="meta"><time datetime="2026-07-21">21. juli 2026</time> · 7 min. læsning</p>
+    </div>
+    <div class="fremhaevet-figur">
+      <!-- Artiklens signaturfigur i lille format (håndkodet SVG).
+           Kilden vedligeholdes i tools/eksport/figur-1-samme-vaerktoej.html -->
+      <svg viewBox="0 0 360 248" role="img" aria-labelledby="fig1-titel fig1-besk" xmlns="http://www.w3.org/2000/svg">
+        <title id="fig1-titel">Samme værktøj. Modsatte udfald.</title>
+        <desc id="fig1-besk">Konceptfigur: Et bundt af mange tynde tråde løber ind mod en lodret stiplet markering mærket AI. Efter markeringen samles halvdelen af trådene i et ordnet, stigende bånd mærket stærk fælles forståelse, mens resten spredes nedad, falmer og trævler op, mærket svag fælles forståelse. Mellemrummet mellem de to strømme vokser mod højre og er mærket "Forskellen øges".</desc>
+        <line class="fig-akse" stroke-width="0.9" stroke-dasharray="3 4" x1="120" y1="20" x2="120" y2="230"/>
+        <text class="fig-navn" x="120" y="12" text-anchor="middle">AI</text>
+        <!-- Stærk: syv tråde samles i et ordnet, stigende bånd -->
+        <g stroke="var(--accent)" fill="none" stroke-width="1.05" stroke-linecap="round" opacity="0.95">
+          <path d="M0,100 C70,99 105,101 122,100 C190,95 262,52 340,26"/>
+          <path d="M0,103 C68,103 106,104 122,103 C192,98 264,57 340,31"/>
+          <path d="M0,107 C72,106 104,107 122,107 C194,102 266,62 340,37"/>
+          <path d="M0,111 C66,110 108,112 122,111 C196,106 268,68 340,42"/>
+          <path d="M0,114 C74,115 102,113 122,114 C198,110 270,74 340,48"/>
+          <path d="M0,118 C69,117 107,119 122,118 C200,114 272,80 340,53"/>
+          <path d="M0,121 C71,122 103,120 122,121 C202,118 274,86 340,58"/>
+        </g>
+        <!-- Svag: syv tråde trævler op og spredes -->
+        <g stroke="var(--tekst)" fill="none" stroke-width="1" stroke-linecap="round">
+          <path opacity="0.75" d="M0,106 C70,107 106,106 122,107 C190,112 260,132 344,150"/>
+          <path opacity="0.7"  d="M0,110 C68,109 104,111 122,110 C192,118 262,146 338,168"/>
+          <path opacity="0.6"  d="M0,117 C72,118 105,116 122,117 C194,126 264,162 344,186"/>
+          <path opacity="0.55" stroke-dasharray="4 3" d="M0,124 C66,123 108,125 122,124 C196,136 266,180 330,201"/>
+          <path opacity="0.5"  d="M0,128 C74,129 103,127 122,128 C198,142 268,196 342,214"/>
+          <path opacity="0.45" stroke-dasharray="2 3" d="M0,132 C69,131 106,133 122,132 C200,148 258,204 322,222"/>
+          <path opacity="0.38" d="M0,135 C71,136 104,134 122,135 C202,152 270,210 340,228"/>
+        </g>
+        <text class="fig-etiket" x="342" y="16" text-anchor="end">Stærk fælles forståelse</text>
+        <text class="fig-etiket" x="342" y="243" text-anchor="end">Svag fælles forståelse</text>
+        <text class="fig-etiket-accent" x="338" y="115" text-anchor="end">Forskellen øges</text>
+      </svg>
+    </div>
+  </article>
+
+  <!-- ======================================================================
+       SERIEN
+       Udgivne dele er links; kommende dele står i dæmpet stil med "Kommer".
+       Når en ny del udgives: Erstat titlen med et a-tag og "Kommer" med
+       datoen (se README.md).
+       ====================================================================== -->
+  <section class="serie" aria-labelledby="serie-rubrik">
+    <h2 class="sektionsrubrik" id="serie-rubrik">Serie · Når hastighed ikke længere giver et forspring</h2>
+    <ol class="serie-liste">
+      <li class="serie-del">
+        <p class="serie-del-etiket">Del 1</p>
+        <p class="serie-del-titel"><a href="artikler/ai-goer-de-gode-bedre.html">AI gør de gode bedre. Og de dårlige dårligere.</a></p>
+        <p class="serie-del-status"><time datetime="2026-07-21">21. juli 2026</time></p>
+      </li>
+      <li class="serie-del er-kommer">
+        <p class="serie-del-etiket">Del 2</p>
+        <p class="serie-del-titel">Shared Mental Model</p>
+        <p class="serie-del-status">Kommer</p>
+      </li>
+      <li class="serie-del er-kommer">
+        <p class="serie-del-etiket">Del 3</p>
+        <p class="serie-del-titel">Executable Mental Model</p>
+        <p class="serie-del-status">Kommer</p>
+      </li>
+    </ol>
+    <p class="arkiv-rss-link meta"><a href="artikler/index.html">Alle artikler i arkivet</a> · <a href="feed.xml">RSS</a></p>
+  </section>
+
+</main>
+
+<!-- Erklærings-ribbon: fast nederst til højre. Klik viser den fulde besked.
+     Ren HTML - virker uden JS (JS lukker blot ved klik udenfor/Escape). -->
+<details class="erklaering">
+  <summary>Skrevet af mig</summary>
+  <div class="erklaering-tekst" role="note">
+    <p class="erklaering-rubrik">Artiklerne her er skrevet af mig. Ikke af AI.</p>
+    <p>Jeg bruger AI som sparringspartner til at udfordre argumenterne, og til at bygge denne blog og de figurer, du ser undervejs. Holdningerne, fejlene og de sidste kald er mine egne.</p>
+    <p><a href="om.html#skrevet-af-mig">Læs mere på om-siden</a></p>
+  </div>
+</details>
+
+<!-- Erklæringen bæres af ribbonen ovenfor - footeren holdes derfor helt slank -->
+<footer class="side-fod">
+  <div class="indhold">
+    <p class="side-fod-links"><a href="artikler/index.html">Artikler</a> · <a href="om.html">Om</a> · <a href="feed.xml">RSS</a> · <a href="https://www.linkedin.com/in/mreetzengell/" rel="me noopener">LinkedIn</a></p>
+  </div>
+</footer>
+
+<script src="assets/js/search.js" defer></script>
+</body>
+</html>

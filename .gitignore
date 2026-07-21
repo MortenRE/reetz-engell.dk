@@ -1,0 +1,8 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# Lokale kilder og værktøj hører ikke i det offentlige repo
+docs/kladder/
+docs/preview-trin1/
+tools/

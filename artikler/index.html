@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="da" data-rod="..">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Artikler · Reetz-Engell</title>
+  <meta name="description" content="Alle artikler, grupperet efter serie. Filtrér efter emne.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Reetz-Engell">
+  <meta property="og:locale" content="da_DK">
+  <meta property="og:title" content="Artikler · Reetz-Engell">
+  <meta property="og:description" content="Alle artikler, grupperet efter serie. Filtrér efter emne.">
+  <meta property="og:image" content="https://reetz-engell.dk/assets/img/figur-1-samme-vaerktoej.png">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS-feed" href="../feed.xml">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../assets/fonts/newsreader-latin.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../assets/fonts/newsreader-italic-latin.woff2">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <script>(function(){try{var t=localStorage.getItem("tema");if(t)document.documentElement.dataset.tema=t}catch(e){}})()</script>
+</head>
+<body>
+
+<header class="side-hoved">
+  <div class="indhold side-hoved-indre">
+    <div class="masthead">
+      <a class="masthead-navn" href="../index.html">Reetz-Engell</a>
+    </div>
+    <nav class="hovednav" aria-label="Hovednavigation">
+      <a href="index.html" aria-current="page">Artikler</a>
+      <a href="../om.html">Om</a>
+      <button class="tema-knap" type="button" hidden aria-label="Skift mellem lyst og mørkt tema">
+        <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5 A6.5 6.5 0 0 1 8 14.5 Z" fill="currentColor"/></svg>
+      </button>
+    </nav>
+    <form class="soegning" action="index.html" method="get" role="search" hidden>
+      <label class="sr-kun" for="soegefelt">Søg i artikler</label>
+      <input type="search" id="soegefelt" name="q" placeholder="Søg i artikler …" autocomplete="off">
+    </form>
+  </div>
+  <div class="soegeresultater indhold" hidden aria-live="polite"></div>
+</header>
+
+<main class="indhold">
+  <div class="maal">
+
+    <h1 class="side-titel">Artikler</h1>
+    <p class="side-indledning">Alle artikler, grupperet efter serie.</p>
+
+    <!-- NY ARTIKEL: Opdatér denne linje, så den peger på den nyeste artikel -->
+    <p class="senest"><span class="senest-etiket">Senest udgivet</span><a href="ai-goer-de-gode-bedre.html">AI gør de gode bedre. Og de dårlige dårligere.</a> · <time datetime="2026-07-21">21. juli 2026</time></p>
+
+    <!-- Emnefilteret er skjult uden JS - alle artikler vises da.
+         Knapperne genereres af search.js ud fra emnerne i artikler.json. -->
+    <div class="filter" hidden>
+      <p class="sr-kun" id="filter-rubrik">Filtrér efter emne</p>
+      <ul class="filter-liste" aria-labelledby="filter-rubrik"></ul>
+    </div>
+
+    <!-- ====================================================================
+         SERIE: Når hastighed ikke længere giver et forspring
+         NY ARTIKEL I SERIEN: Kopiér <li>-blokken markeret nedenfor, indsæt
+         den kronologisk (nyeste nederst i serien), og fjern den tilsvarende
+         "Kommer"-linje. Se README.md.
+         ==================================================================== -->
+    <section class="arkiv-serie" aria-labelledby="serie-nkbb">
+      <h2 class="sektionsrubrik" id="serie-nkbb">Serie · Når hastighed ikke længere giver et forspring</h2>
+      <ol class="artikelliste">
+        <!-- NY ARTIKEL: KOPIÉR BLOKKEN HERUNDER -->
+        <li class="artikelpunkt" data-emner="AI,Ledelse,Softwareudvikling">
+          <p class="seriemaerke">Del 1 · Hypotesen</p>
+          <h3 class="artikelpunkt-titel"><a href="ai-goer-de-gode-bedre.html">AI gør de gode bedre. Og de dårlige dårligere.</a></h3>
+          <p class="artikelpunkt-resume">AI reducerer ikke forskellen mellem stærke og svage softwareorganisationer. Den øger den.</p>
+          <p class="meta"><time datetime="2026-07-21">21. juli 2026</time> · 7 min. læsning · AI · Ledelse · Softwareudvikling</p>
+        </li>
+        <!-- NY ARTIKEL: KOPIÉR BLOKKEN HEROVER -->
+        <li class="artikelpunkt er-kommer">
+          <p class="seriemaerke">Del 2</p>
+          <h3 class="artikelpunkt-titel">Shared Mental Model<span class="kommer-maerke">Kommer</span></h3>
+        </li>
+        <li class="artikelpunkt er-kommer">
+          <p class="seriemaerke">Del 3</p>
+          <h3 class="artikelpunkt-titel">Executable Mental Model<span class="kommer-maerke">Kommer</span></h3>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ARTIKLER UDEN FOR SERIE: Tilføj en ny <section class="arkiv-serie">
+         med rubrikken "Øvrige artikler" her, når den første selvstændige
+         artikel udgives - samme listeopbygning som ovenfor. -->
+
+    <p class="arkiv-rss-link meta"><a href="../feed.xml">Abonnér via RSS</a></p>
+
+  </div>
+</main>
+
+<!-- Erklærings-ribbon: fast nederst til højre. Klik viser den fulde besked.
+     Ren HTML - virker uden JS (JS lukker blot ved klik udenfor/Escape). -->
+<details class="erklaering">
+  <summary>Skrevet af mig</summary>
+  <div class="erklaering-tekst" role="note">
+    <p class="erklaering-rubrik">Artiklerne her er skrevet af mig. Ikke af AI.</p>
+    <p>Jeg bruger AI som sparringspartner til at udfordre argumenterne, og til at bygge denne blog og de figurer, du ser undervejs. Holdningerne, fejlene og de sidste kald er mine egne.</p>
+    <p><a href="../om.html#skrevet-af-mig">Læs mere på om-siden</a></p>
+  </div>
+</details>
+
+<footer class="side-fod">
+  <div class="indhold">
+    <p class="side-fod-links"><a href="index.html">Artikler</a> · <a href="../om.html">Om</a> · <a href="../feed.xml">RSS</a> · <a href="https://www.linkedin.com/in/mreetzengell/" rel="me noopener">LinkedIn</a></p>
+  </div>
+</footer>
+
+<script src="../assets/js/search.js" defer></script>
+</body>
+</html>

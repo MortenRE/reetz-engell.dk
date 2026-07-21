@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="da" data-rod=".">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Om · Reetz-Engell</title>
+  <meta name="description" content="Om bloggen og om mig: Jeg skriver selv alle artikler her. AI er kun sparringspartner.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Reetz-Engell">
+  <meta property="og:locale" content="da_DK">
+  <meta property="og:title" content="Om · Reetz-Engell">
+  <meta property="og:description" content="Om bloggen og om mig: Jeg skriver selv alle artikler her. AI er kun sparringspartner.">
+  <meta property="og:image" content="https://reetz-engell.dk/assets/img/figur-1-samme-vaerktoej.png">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS-feed" href="feed.xml">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="assets/fonts/newsreader-latin.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="assets/fonts/newsreader-italic-latin.woff2">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <script>(function(){try{var t=localStorage.getItem("tema");if(t)document.documentElement.dataset.tema=t}catch(e){}})()</script>
+</head>
+<body>
+
+<header class="side-hoved">
+  <div class="indhold side-hoved-indre">
+    <div class="masthead">
+      <a class="masthead-navn" href="index.html">Reetz-Engell</a>
+    </div>
+    <nav class="hovednav" aria-label="Hovednavigation">
+      <a href="artikler/index.html">Artikler</a>
+      <a href="om.html" aria-current="page">Om</a>
+      <button class="tema-knap" type="button" hidden aria-label="Skift mellem lyst og mørkt tema">
+        <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5 A6.5 6.5 0 0 1 8 14.5 Z" fill="currentColor"/></svg>
+      </button>
+    </nav>
+    <form class="soegning" action="artikler/index.html" method="get" role="search" hidden>
+      <label class="sr-kun" for="soegefelt">Søg i artikler</label>
+      <input type="search" id="soegefelt" name="q" placeholder="Søg i artikler …" autocomplete="off">
+    </form>
+  </div>
+  <div class="soegeresultater indhold" hidden aria-live="polite"></div>
+</header>
+
+<main class="indhold">
+  <div class="maal">
+
+    <img class="om-foto" src="assets/img/profil.jpg" alt="Portrætfoto af Morten Holmelin Reetz-Engell" width="400" height="400">
+
+    <h1 class="side-titel">Om</h1>
+
+    <p>Jeg hedder Morten Holmelin Reetz-Engell. Jeg har arbejdet med softwareudvikling i en årrække, først som udvikler, siden som arkitekt og i dag som teknologileder med ansvar for arkitektur, organisation og de mennesker, der bygger løsningerne.</p>
+    <p>Kunstig intelligens har optaget mig siden 2015, længe før det blev allemandseje. AI er i dag det mest omtalte i branchen, det der får flest overskrifter og mest opmærksomhed. Netop derfor er det værd at se køligt på: Hvad forandrer sig reelt, og hvad er støj?</p>
+    <p>Det, der optager mig, er sammenhængen mellem teknologi og forretning: hvordan en organisation omsætter forståelse til software, der skaber værdi. Teknologivalg er forretningsvalg, og de bedste resultater opstår, når arkitektur, organisation og strategi tænkes sammen frem for hver for sig. AI flytter værdien i softwareudvikling fra eksekvering til forståelse, og det ændrer, hvad det vil sige at lede teknologi. Det er dét, jeg skriver om her, set fra beslutningsbordet. Artiklerne er til CTO'er, CIO'er og andre, der har ansvaret, når teknologien skal levere.</p>
+    <p>Du kan følge med og tage kontakt via <a href="https://www.linkedin.com/in/mreetzengell/" rel="me noopener">LinkedIn</a>.</p>
+
+    <h2 class="sektionsrubrik" id="skrevet-af-mig">Skrevet af mig. Ikke af AI</h2>
+    <p>Teksterne her er skrevet af et menneske. Det burde være en selvfølge, men er det ikke længere: I dag kan hvem som helst sætte en model til at fylde en side med velformulerede ord. Denne blog hviler på det modsatte princip. Ordene, argumenterne og konklusionerne er mine.</p>
+    <p>AI spiller en rolle, men en anden. Den er sparringspartner, der udfordrer ræsonnementer og presser formuleringer, og den har bygget selve siden og de figurer, der følger artiklerne. Men holdningerne, fejlene og de sidste kald er ikke uddelegeret.</p>
+
+  </div>
+</main>
+
+<!-- Ingen ribbon og ingen footer-erklæring her: Om-siden ER erklæringen -->
+<footer class="side-fod">
+  <div class="indhold">
+    <p class="side-fod-links"><a href="artikler/index.html">Artikler</a> · <a href="om.html">Om</a> · <a href="feed.xml">RSS</a> · <a href="https://www.linkedin.com/in/mreetzengell/" rel="me noopener">LinkedIn</a></p>
+  </div>
+</footer>
+
+<script src="assets/js/search.js" defer></script>
+</body>
+</html>

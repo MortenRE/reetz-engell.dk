@@ -1,0 +1,44 @@
+{
+  "_kommentar": "Central sandhed for artikelmetadata. Ny artikel: se README.md. Stier er relative til repo-roden (ingen foranstillet skråstreg). 'featured: true' styrer forsidens fremhævede artikel, kun én ad gangen.",
+  "serier": [
+    {
+      "titel": "Når hastighed ikke længere giver et forspring",
+      "dele": [
+        {
+          "del": 1,
+          "titel": "AI gør de gode bedre. Og de dårlige dårligere.",
+          "undertitel": "Hypotesen",
+          "slug": "ai-goer-de-gode-bedre",
+          "status": "udgivet"
+        },
+        {
+          "del": 2,
+          "titel": "Shared Mental Model",
+          "status": "kommer"
+        },
+        {
+          "del": 3,
+          "titel": "Executable Mental Model",
+          "status": "kommer"
+        }
+      ]
+    }
+  ],
+  "artikler": [
+    {
+      "slug": "ai-goer-de-gode-bedre",
+      "titel": "AI gør de gode bedre. Og de dårlige dårligere.",
+      "serie": "Når hastighed ikke længere giver et forspring",
+      "del": 1,
+      "eyebrow": "Del 1: Hypotesen",
+      "dato": "2026-07-21",
+      "laesetidMin": 7,
+      "resume": "AI reducerer ikke forskellen mellem stærke og svage softwareorganisationer. Den øger den.",
+      "emner": ["AI", "Ledelse", "Softwareudvikling"],
+      "sti": "artikler/ai-goer-de-gode-bedre.html",
+      "ogImage": "assets/img/figur-1-samme-vaerktoej.png",
+      "featured": true,
+      "relaterede": []
+    }
+  ]
+}

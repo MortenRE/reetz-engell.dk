@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- ==========================================================================
+     ARTIKELSKABELON
+     Ny artikel: Kopiér denne fil til artikler/<slug>.html og følg de
+     nummererede RET-kommentarer. Hele processen er beskrevet i README.md.
+     Filen starter med underscore og er kun en skabelon - den linkes aldrig.
+     ========================================================================== -->
+<html lang="da" data-rod="..">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- RET 1: Titel og beskrivelse (beskrivelse = artiklens én-linjes resumé) -->
+  <title>[ARTIKLENS TITEL] · Reetz-Engell</title>
+  <meta name="description" content="[ARTIKLENS RESUMÉ]">
+
+  <!-- RET 2: Open Graph. og:image SKAL være en absolut URL og pege på
+       artiklens signaturfigur som PNG (1200x630) i assets/img/. -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Reetz-Engell">
+  <meta property="og:locale" content="da_DK">
+  <meta property="og:title" content="[ARTIKLENS TITEL]">
+  <meta property="og:description" content="[ARTIKLENS RESUMÉ]">
+  <meta property="og:image" content="https://reetz-engell.dk/assets/img/[FIGUR-PNG-NAVN].png">
+
+  <link rel="alternate" type="application/rss+xml" title="RSS-feed" href="../feed.xml">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../assets/fonts/newsreader-latin.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../assets/fonts/newsreader-italic-latin.woff2">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <script>(function(){try{var t=localStorage.getItem("tema");if(t)document.documentElement.dataset.tema=t}catch(e){}})()</script>
+</head>
+<body>
+
+<!-- Læsefremdrift: Tynd linje øverst. Ren CSS, respekterer reduced-motion,
+     og vises slet ikke i browsere uden understøttelse. -->
+<div class="fremdrift" aria-hidden="true"></div>
+
+<header class="side-hoved">
+  <div class="indhold side-hoved-indre">
+    <div class="masthead">
+      <a class="masthead-navn" href="../index.html">Reetz-Engell</a>
+    </div>
+    <nav class="hovednav" aria-label="Hovednavigation">
+      <a href="index.html">Artikler</a>
+      <a href="../om.html">Om</a>
+      <button class="tema-knap" type="button" hidden aria-label="Skift mellem lyst og mørkt tema">
+        <svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.5 A6.5 6.5 0 0 1 8 14.5 Z" fill="currentColor"/></svg>
+      </button>
+    </nav>
+    <form class="soegning" action="index.html" method="get" role="search" hidden>
+      <label class="sr-kun" for="soegefelt">Søg i artikler</label>
+      <input type="search" id="soegefelt" name="q" placeholder="Søg i artikler …" autocomplete="off">
+    </form>
+  </div>
+  <div class="soegeresultater indhold" hidden aria-live="polite"></div>
+</header>
+
+<main class="indhold">
+  <article class="artikel maal">
+
+    <header class="artikel-hoved">
+      <!-- RET 3: Seriemærke, titel og metadata. Seriemærket udelades for
+           artikler uden serie. -->
+      <p class="seriemaerke">[Seriens navn] · Del [X]: [Undertitel]</p>
+      <h1 class="artikel-titel">[ARTIKLENS TITEL]</h1>
+      <p class="meta"><time datetime="[ÅÅÅÅ-MM-DD]">[D. måned åååå]</time> · [X] min. læsning · [Emne] · [Emne]</p>
+    </header>
+
+    <div class="artikel-krop">
+
+      <!-- RET 4: Brødteksten sættes ORDRET fra kladden i docs/kladder/.
+           Kladdens ##-overskrifter bliver til <h2>. Kladdens inline
+           HTML-kommentarer (FIGUR, MANDAGSTESTEN osv.) er autoritative for
+           placering - men kommentarerne må ALDRIG følge med i HTML'en her. -->
+
+      <p>[Første afsnit. Denne skabelontekst viser blot typografien: Brødteksten
+      sættes med god linjeafstand og en linjelængde på 65-70 tegn, så lange,
+      argumenterende artikler kan læses i ét stræk på en telefon.]</p>
+
+      <p>[Andet afsnit med et <a href="#">eksempel på et link</a>, kursiveret
+      <em>betoning</em> og <strong>fremhævet tekst</strong>, så alle
+      tekstniveauer kan vurderes i både lys og mørk tilstand.]</p>
+
+      <h2>[Mellemrubrik - fra kladdens ##-overskrift]</h2>
+
+      <p>[Flere afsnit …]</p>
+
+      <!-- FIGUR: Håndkodet inline-SVG. Farver via CSS-variabler
+           (fig-klasserne i style.css), etiketter som rigtig SVG-tekst,
+           læsbar ved 380 px. role="img" + <title> og <desc> med dækkende
+           beskrivelse. Figurens kilde vedligeholdes i
+           tools/eksport/<figurnavn>.html og kopieres herind - PNG-eksporten
+           (1200x630, lys) genereres derfra med tools/export-figurer.ps1. -->
+      <figure class="figur">
+        <svg viewBox="0 0 360 244" role="img" aria-labelledby="figX-titel figX-besk" xmlns="http://www.w3.org/2000/svg">
+          <title id="figX-titel">[Figurens titel]</title>
+          <desc id="figX-besk">[Dækkende beskrivelse af figuren til skærmlæsere.]</desc>
+          <rect class="fig-akse" x="20" y="20" width="320" height="200" stroke-width="0.75"/>
+          <text class="fig-etiket" x="180" y="125" text-anchor="middle">[Figur-indhold]</text>
+        </svg>
+        <figcaption>[Figurtekst: kort forklaring under figuren.]</figcaption>
+      </figure>
+
+      <p>[Flere afsnit …]</p>
+
+      <!-- MANDAGSTESTEN (eller tilsvarende "prøv selv"-afsnit): diskret
+           markering med tynd accentkant og svagt tonet baggrund. -->
+      <div class="proev-selv">
+        <p>[Afsnit, læseren selv kan afprøve - fx artiklens afsluttende test.]</p>
+      </div>
+
+    </div>
+
+    <footer class="artikel-fod">
+
+      <!-- RET 5: Serie-navigation. Fjern den retning, der ikke findes.
+           Kommende dele uden link: brug spanet med kommer-mærke. -->
+      <nav class="serie-nav" aria-label="Serienavigation">
+        <p><span class="serie-nav-retning">Forrige i serien</span><a href="[SLUG].html">[FORRIGE ARTIKELS TITEL]</a></p>
+        <p><span class="serie-nav-retning">Næste i serien</span><span>[NÆSTE ARTIKELS TITEL]<span class="kommer-maerke">Kommer</span></span></p>
+      </nav>
+
+      <!-- RET 6: 2-3 relaterede artikler - vælges manuelt og angives også i
+           feltet "relaterede" i assets/data/artikler.json (slugs). -->
+      <section class="relaterede" aria-labelledby="relaterede-rubrik">
+        <h2 class="sektionsrubrik" id="relaterede-rubrik">Relaterede artikler</h2>
+        <ol class="artikelliste">
+          <li class="artikelpunkt">
+            <h3 class="artikelpunkt-titel"><a href="[SLUG].html">[RELATERET ARTIKELS TITEL]</a></h3>
+            <p class="meta"><time datetime="[ÅÅÅÅ-MM-DD]">[D. måned åååå]</time> · [X] min. læsning</p>
+          </li>
+        </ol>
+      </section>
+
+    </footer>
+
+  </article>
+</main>
+
+<!-- Erklærings-ribbon: fast nederst til højre. Klik viser den fulde besked.
+     Ren HTML - virker uden JS (JS lukker blot ved klik udenfor/Escape). -->
+<details class="erklaering">
+  <summary>Skrevet af mig</summary>
+  <div class="erklaering-tekst" role="note">
+    <p class="erklaering-rubrik">Artiklerne her er skrevet af mig. Ikke af AI.</p>
+    <p>Jeg bruger AI som sparringspartner til at udfordre argumenterne, og til at bygge denne blog og de figurer, du ser undervejs. Holdningerne, fejlene og de sidste kald er mine egne.</p>
+    <p><a href="../om.html#skrevet-af-mig">Læs mere på om-siden</a></p>
+  </div>
+</details>
+
+<!-- Erklæringen bæres af ribbonen ovenfor - footeren holdes derfor helt slank -->
+<footer class="side-fod">
+  <div class="indhold">
+    <p class="side-fod-links"><a href="index.html">Artikler</a> · <a href="../om.html">Om</a> · <a href="../feed.xml">RSS</a> · <a href="https://www.linkedin.com/in/mreetzengell/" rel="me noopener">LinkedIn</a></p>
+  </div>
+</footer>
+
+<script src="../assets/js/search.js" defer></script>
+</body>
+</html>
