@@ -63,7 +63,7 @@
   <article class="artikel maal">
 
     <header class="artikel-hoved">
-      <p class="seriemaerke">Når hastighed ikke længere er en konkurrencefordel · Del 1: Hypotesen</p>
+      <p class="seriemaerke">Når hastighed ikke længere giver et forspring · Del 1: Hypotesen</p>
       <h1 class="artikel-titel">AI gør de gode bedre. Og de dårlige dårligere.</h1>
       <p class="meta"><time datetime="2026-07-21">21. juli 2026</time> · 7 min. læsning · AI · Ledelse · Softwareudvikling</p>
     </header>
@@ -209,15 +209,24 @@
 
       <p>Hvis dette holder, så følger der en interessant konsekvens. AI reducerer ikke forskellen mellem stærke og svage softwareorganisationer. Den øger den.</p>
 
-      <p>Det kan lyde som et paradoks, for på individniveau peger flere undersøgelser på, at AI ofte løfter de mindst erfarne udviklere mest, men en organisation er ikke summen af individer. En organisation med en svag fælles forståelse accelererer ikke kun produktion af kode - den accelererer også produktion af misforståelser, fejlbeslutninger og teknisk gæld.</p>
+      <p>Det kan lyde som et paradoks, for på individniveau peger flere undersøgelser på, at AI ofte løfter de mindst erfarne udviklere mest, men en organisation er ikke summen af individer. En organisation med en svag fælles forståelse accelererer ikke kun produktion af kode - den accelererer også produktion af misforståelser, fejlbeslutninger og teknisk gæld. Det handler om, at når støvet lægger sig i driften, skalerer AI din forretningsforståelse. Eller manglen på samme.</p>
 
       <h2>Hvordan skaber vi en fælles forståelse, og hvordan gør vi den eksekverbar?</h2>
 
       <p>I denne artikel er der flere gange brugt ordet <em>forståelse</em>. Det er bevidst. Ordet skal ikke bruges som en blød eller filosofisk størrelse, men bruges som en samlet betegnelse for den viden og de beslutninger, der gør det muligt at omsætte et behov til en løsning, der skaber værdi. Det kan f.eks. være forståelsen af forretningsregler, domænets begreber, de krav løsningen skal opfylde og hvordan de testes eller de arkitektoniske beslutninger, den bygger på.</p>
 
+      <p>Den forståelse findes ikke ét sted. Efter min opfattelse består den af to forskellige, men tæt forbundne mentale modeller.</p>
+
+      <ul>
+        <li><strong>Shared Mental Model</strong> - <em>Hvad? Hvorfor?</em><br>
+        Beskriver den fælles forståelse af problemet: Hvad skal bygges? Hvilken værdi skal skabes? Hvilke regler og behov skal løsningen opfylde?</li>
+        <li><strong>Executable Mental Model</strong> - <em>Hvordan?</em><br>
+        Beskriver hvordan den fælles forståelse omsættes til en model der kan eksekveres af enten mennesker eller agenter.</li>
+      </ul>
+
       <!-- FIGUR 2 (flyder til højre på brede skærme, fuld bredde på mobil):
            Seriens rammefigur - genbruges og udbygges i del 2 og 3.
-           Placeret ved afsnittet, den beskriver, så teksten wrapper den.
+           Placeret efter punktlisten, så den samler op på de to modeller.
            Kilde: tools/eksport/figur-2-mentale-modeller.html -->
       <figure class="figur figur-flyd">
         <svg viewBox="0 0 340 330" role="img" aria-labelledby="fig2s-titel fig2s-besk" xmlns="http://www.w3.org/2000/svg">
@@ -246,15 +255,6 @@
           <text class="fig-punkt" x="30" y="296">Eksekverbar af agenter</text>
         </svg>
       </figure>
-
-      <p>Den forståelse findes ikke ét sted. Efter min opfattelse består den af to forskellige, men tæt forbundne mentale modeller.</p>
-
-      <ul>
-        <li><strong>Shared Mental Model</strong> - <em>Hvad? Hvorfor?</em><br>
-        Beskriver den fælles forståelse af problemet: Hvad skal bygges? Hvilken værdi skal skabes? Hvilke regler og behov skal løsningen opfylde?</li>
-        <li><strong>Executable Mental Model</strong> - <em>Hvordan?</em><br>
-        Beskriver hvordan den fælles forståelse omsættes til en model der kan eksekveres af enten mennesker eller agenter.</li>
-      </ul>
 
       <p>Begge modeller findes allerede i enhver udviklingsafdeling. Spørgsmålet er kun, hvor eksplicitte de er. Den fælles forståelse lever typisk i kravbeskrivelser, på whiteboards og i hovederne på de mest erfarne, og forsvinder med dem, når de skifter job eller pensioneres. Den eksekverbare model kender de fleste i andre mindre dele: en automatiseret test, der udtrykker en forretningsregel, er et lille stykke forståelse, som både et menneske og en agent kan eksekvere og verificere. Forestil dig så hele domænet beskrevet på denne måde.</p>
 
@@ -306,10 +306,10 @@
      ikke allerede er truffet et valg. Uden JS vises det aldrig, og der
      sættes heller ingen cookies (Consent Mode starter afvist). -->
 <aside class="samtykke" hidden aria-label="Samtykke til besøgsstatistik">
-  <p>Må jeg tælle dit besøg? Jeg bruger Google Analytics til simpel besøgsstatistik, så jeg kan se, hvilke artikler der bliver læst. Ikke til annoncer.</p>
+  <p>Denne side bruger cookies til anonym besøgsstatistik (Google Analytics).</p>
   <div class="samtykke-knapper">
-    <button type="button" class="samtykke-ja">Ja tak</button>
-    <button type="button" class="samtykke-nej">Nej tak</button>
+    <button type="button" class="samtykke-ja">Accepter</button>
+    <button type="button" class="samtykke-nej">Afvis</button>
   </div>
 </aside>
 
