@@ -24,6 +24,10 @@
 
   <!-- Flicker-frit manuelt tema: læser valget FØR første maling af siden -->
   <script>(function(){try{var t=localStorage.getItem("tema");if(t)document.documentElement.dataset.tema=t}catch(e){}})()</script>
+  <!-- Analytics (Firebase / Google Analytics 4). Bevidst undtagelse fra
+       reglen om ingen eksterne scripts - siden fungerer fuldt ud uden. -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5WRZSXJRXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-5WRZSXJRXX");</script>
 </head>
 <body>
 

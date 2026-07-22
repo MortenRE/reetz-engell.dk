@@ -115,6 +115,16 @@ Bemærk: Indtil DNS peger på GitHub Pages, virker `og:image`-previews på
 LinkedIn ikke (de kræver, at billederne kan hentes på det absolutte domæne).
 Selve siden fungerer fint via GitHub Pages-URL'en i mellemtiden.
 
+## Analytics
+
+Alle sider indlæser Google Analytics 4 via `gtag.js` med measurement-id
+`G-5WRZSXJRXX` (Firebase-projektet reetz-engelldk). Det er den ene bevidste
+undtagelse fra reglen om ingen eksterne scripts; sitet fungerer fuldt ud,
+hvis scriptet blokeres. Besøgstal ses i Firebase-konsollen under Analytics
+eller i GA4; sidevisninger pr. artikel ligger under Rapporter -> Engagement
+-> Sider og skærme. Skabelonen har snippet med, så nye artikler tælles
+automatisk.
+
 ## Profilfoto
 
 Fotoet ligger i `assets/img/profil.jpg` (webooptimeret) og bruges på
