@@ -842,6 +842,20 @@ a:hover {
   margin-bottom: 0;
 }
 
+/* Kildeliste sidst i artiklen: mindre og dæmpet, og lange URL'er må bryde */
+.artikel-krop .kilder {
+  font-size: 0.88rem;
+  color: var(--daemp);
+}
+
+.artikel-krop .kilder li {
+  margin-bottom: 0.8em;
+}
+
+.artikel-krop .kilder a {
+  overflow-wrap: anywhere;
+}
+
 /* Serie-navigation og relaterede artikler i bunden af artiklen */
 .artikel-fod {
   clear: both;
