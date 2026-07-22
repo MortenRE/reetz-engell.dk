@@ -972,6 +972,71 @@ a:hover {
   color: var(--tekst);
 }
 
+/* Samtykke-banner: lille, roligt kort nederst til venstre. Vises kun via
+   JS, når der ikke allerede er truffet et valg. */
+.samtykke {
+  position: fixed;
+  left: clamp(0.9rem, 2.5vw, 1.6rem);
+  bottom: clamp(0.9rem, 2.5vw, 1.6rem);
+  z-index: 30;
+  max-width: 21rem;
+  background: var(--bg);
+  border: 1px solid var(--linje);
+  border-radius: 6px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.09);
+  padding: 1rem 1.15rem;
+  font-size: 0.85rem;
+  line-height: 1.55;
+}
+
+.samtykke p {
+  margin: 0 0 0.8rem;
+}
+
+.samtykke-knapper {
+  display: flex;
+  gap: 1.1rem;
+  align-items: center;
+}
+
+.samtykke-ja {
+  font-family: var(--skrift-broed);
+  font-size: 0.85rem;
+  color: var(--bg);
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  padding: 0.3rem 1.05rem;
+  cursor: pointer;
+}
+
+.samtykke-ja:hover {
+  opacity: 0.88;
+}
+
+.samtykke-nej {
+  font-family: var(--skrift-broed);
+  font-size: 0.85rem;
+  color: var(--daemp);
+  background: none;
+  border: 0;
+  padding: 0.3rem 0;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.samtykke-nej:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 44.99em) {
+  .samtykke {
+    right: clamp(0.9rem, 2.5vw, 1.6rem);
+    max-width: none;
+  }
+}
+
 /* 9. Læsefremdrift og reduceret bevægelse
    -------------------------------------------------------------------------- */
 

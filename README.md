@@ -125,6 +125,12 @@ eller i GA4; sidevisninger pr. artikel ligger under Rapporter -> Engagement
 -> Sider og skærme. Skabelonen har snippet med, så nye artikler tælles
 automatisk.
 
+Cookies styres af Consent Mode + samtykke-banneret (`.samtykke`): Alt er
+afvist som udgangspunkt, så der sættes ingen cookies, før den besøgende
+klikker "Ja tak". Ved "Nej tak" sender GA kun anonyme, cookiefri pings
+(tallene bliver da modellerede/omtrentlige). Valget huskes i localStorage
+under nøglen `samtykke`; slet den for at se banneret igen.
+
 ## Profilfoto
 
 Fotoet ligger i `assets/img/profil.jpg` (webooptimeret) og bruges på

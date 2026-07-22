@@ -26,7 +26,14 @@
   <!-- Analytics (Firebase / Google Analytics 4). Bevidst undtagelse fra
        reglen om ingen eksterne scripts - siden fungerer fuldt ud uden. -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5WRZSXJRXX"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-5WRZSXJRXX");</script>
+  <script>
+    window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+    /* Consent Mode: alt naegtet som udgangspunkt - ingen cookies foer "Ja tak"
+       i samtykke-banneret. Valget huskes i localStorage. */
+    gtag("consent","default",{ad_storage:"denied",ad_user_data:"denied",ad_personalization:"denied",analytics_storage:"denied"});
+    try{if(localStorage.getItem("samtykke")==="ja"){gtag("consent","update",{analytics_storage:"granted"})}}catch(e){}
+    gtag("js",new Date());gtag("config","G-5WRZSXJRXX");
+  </script>
 </head>
 <body>
 
@@ -294,6 +301,17 @@
     <p><a href="../om.html#skrevet-af-mig">Læs mere på om-siden</a></p>
   </div>
 </details>
+
+<!-- Samtykke-banner for besøgsstatistik: Vises kun (via search.js), når der
+     ikke allerede er truffet et valg. Uden JS vises det aldrig, og der
+     sættes heller ingen cookies (Consent Mode starter afvist). -->
+<aside class="samtykke" hidden aria-label="Samtykke til besøgsstatistik">
+  <p>Må jeg tælle dit besøg? Jeg bruger Google Analytics til simpel besøgsstatistik, så jeg kan se, hvilke artikler der bliver læst. Ikke til annoncer.</p>
+  <div class="samtykke-knapper">
+    <button type="button" class="samtykke-ja">Ja tak</button>
+    <button type="button" class="samtykke-nej">Nej tak</button>
+  </div>
+</aside>
 
 <footer class="side-fod">
   <div class="indhold">

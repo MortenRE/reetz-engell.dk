@@ -39,6 +39,34 @@
     });
   }
 
+  /* --- Samtykke-banner: styrer om Analytics må sætte cookies --- */
+  var samtykke = document.querySelector(".samtykke");
+  if (samtykke) {
+    var valg = null;
+    try {
+      valg = localStorage.getItem("samtykke");
+    } catch (e) {
+      /* localStorage blokeret: banneret vises hver gang, valget huskes ikke */
+    }
+    if (!valg) samtykke.hidden = false;
+
+    var gemValg = function (v) {
+      try {
+        localStorage.setItem("samtykke", v);
+      } catch (e) {}
+      samtykke.hidden = true;
+      if (v === "ja" && typeof gtag === "function") {
+        gtag("consent", "update", { analytics_storage: "granted" });
+      }
+    };
+    samtykke.querySelector(".samtykke-ja").addEventListener("click", function () {
+      gemValg("ja");
+    });
+    samtykke.querySelector(".samtykke-nej").addEventListener("click", function () {
+      gemValg("nej");
+    });
+  }
+
   /* --- Manifestet hentes én gang og driver både søgning og emnefilter --- */
   fetch(rod + "/assets/data/artikler.json")
     .then(function (svar) {
