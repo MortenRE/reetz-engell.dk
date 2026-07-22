@@ -2,7 +2,7 @@
   "_kommentar": "Central sandhed for artikelmetadata. Ny artikel: se README.md. Stier er relative til repo-roden (ingen foranstillet skråstreg). 'featured: true' styrer forsidens fremhævede artikel, kun én ad gangen.",
   "serier": [
     {
-      "titel": "Når hastighed ikke længere giver et forspring",
+      "titel": "Når hastighed ikke længere er en konkurrencefordel",
       "dele": [
         {
           "del": 1,
@@ -28,7 +28,7 @@
     {
       "slug": "ai-goer-de-gode-bedre",
       "titel": "AI gør de gode bedre. Og de dårlige dårligere.",
-      "serie": "Når hastighed ikke længere giver et forspring",
+      "serie": "Når hastighed ikke længere er en konkurrencefordel",
       "del": 1,
       "eyebrow": "Del 1: Hypotesen",
       "dato": "2026-07-21",
