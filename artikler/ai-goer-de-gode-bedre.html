@@ -70,7 +70,7 @@
 
     <div class="artikel-krop">
 
-      <p>Da ChatGPT blev allemandseje i slutningen af 2022, kunne den højst foreslå enkelte code snippets, men det var tydeligt, at det kun var begyndelsen. I dag arbejder agenter i hele kodebaser, mennesker uden en linje kode bag sig vibe coder sig frem til apps, og opgaver, der før bandt vores dygtigste udviklere i dagevis, løses på en eftermiddag.</p>
+      <p>Da ChatGPT blev allemandseje i slutningen af 2022, kunne den højst foreslå enkelte code snippets, men det var tydeligt, at det kun var begyndelsen. I dag arbejder agenter i hele kodebaser, mennesker uden så meget som en linje kode bag sig vibe coder sig frem til apps, og opgaver, der før bandt vores dygtigste udviklere i dagevis, løses på en eftermiddag.</p>
 
       <p>Det er fristende at læse som en historie om hastighed, men det interessante er ikke nødvendigvis kun, at koden bliver skrevet hurtigere. Det er også, hvad der sker, når det, der altid har sat tempoet i softwareudvikling, pludselig ikke gør det længere.</p>
 
@@ -159,6 +159,7 @@
           <text class="fig-ord" x="246" y="142">Implementering</text>
           <text class="fig-ord" x="246" y="182">Værdi</text>
         </svg>
+        <figcaption><span class="fig-nr">Figur 1</span> Flaskehalsen er flyttet fra implementering til forståelse.</figcaption>
       </figure>
 
       <p>Man kan indføre nok så mange metoder og processer. Hvis den fælles forståelse mangler, sættes der bare struktur på forvirringen. Denne artikel handler om det lag, de metoder og processer hviler på.</p>
@@ -171,11 +172,11 @@
 
       <p>Nogle udviklingsafdelinger har med AI opnået markante løft i produktiviteten. Andre oplever, at AI hjælper dem til at producere mere kode, men ikke nødvendigvis bedre software. Nogle ser højere hastighed og kvalitet i deres leverancer, mens andre ser flere fejl, større teknisk gæld og løsninger, der passer dårligere til forretningen.</p>
 
-      <p>Hvis AI i sig selv var løsningen, så burde forskellen mellem de grupper være betydeligt mindre. Den er større. DORA, Googles forskningsprogram der årligt undersøger hvorfor nogle softwareorganisationer leverer bedre end andre, når samme konklusion i <em>State of AI-assisted Software Development</em> fra 2025: AI skaber ikke gode organisationer. Den forstærker det organisationen allerede gør - de gode bliver bedre, og de dårlige bliver dårligere. Og det gælder ikke kun implementeringen. Når prototyper, tests og eksperimenter bliver billigere, bliver det også muligt at lære hurtigere. AI accelererer derfor både eksekveringen og arbejdet med at opbygge forståelse. Hvor meget værdi det skaber, afhænger af afdelingens evne til at omsætte denne læring til bedre beslutninger og bedre software.</p>
+      <p>Hvis AI i sig selv var løsningen, så burde forskellen mellem de grupper være betydeligt mindre. Den er større. DORA, Googles forskningsprogram der årligt undersøger hvorfor nogle softwareorganisationer leverer bedre end andre, når til samme konklusion i <em>State of AI-assisted Software Development</em> fra 2025: AI skaber ikke gode organisationer. Den forstærker det organisationen allerede gør - de gode bliver bedre, og de dårlige bliver dårligere. Og det gælder ikke kun implementeringen. Når prototyper, tests og eksperimenter bliver billigere, bliver det også muligt at lære hurtigere. AI accelererer derfor både eksekveringen og arbejdet med at opbygge forståelse. Hvor meget værdi det skaber, afhænger af afdelingens evne til at omsætte denne læring til bedre beslutninger og dermed bedre løsninger.</p>
 
       <p>Det skyldes, at AI ikke skaber en fælles forståelse af sig selv. Den eksekverer på den forståelse, der allerede findes, og denne forståelse opstår fortsat gennem mennesker. Gennem domænekendskab, dialog med forretningen, arkitektoniske beslutninger og en fælles forståelse af det problem, der skal løses, eller den værdi, der skal skabes.</p>
 
-      <p>I en organisation med en stærk fælles forståelse accelererer AI derfor det rigtige: god domæneforståelse, der bliver til klare krav, der bliver til god software, hurtigere. I en organisation med en svag fælles forståelse accelererer den det forkerte: Antagelser, der aldrig blev udfordret, bliver til kode, før nogen når at stille spørgsmålet. Samme værktøj. Modsatte udfald.</p>
+      <p>I en organisation med en stærk fælles forståelse accelererer AI derfor det rigtige: god domæneforståelse, der bliver til klare krav, der bliver til god software, hurtigere. I en organisation med en svag fælles forståelse accelererer den det forkerte: Antagelser, der aldrig blev udfordret, bliver til kode, der aldrig skulle have været skrevet. Samme værktøj. Modsatte udfald.</p>
 
       <!-- FIGUR 1: Artiklens signaturfigur ("Trådene"). PNG-versionen er
            og:image. Kilde: tools/eksport/figur-1-samme-vaerktoej.html -->
@@ -207,11 +208,12 @@
           <text class="fig-etiket" x="342" y="243" text-anchor="end">Svag fælles forståelse</text>
           <text class="fig-etiket-accent" x="338" y="115" text-anchor="end">Forskellen øges</text>
         </svg>
+        <figcaption><span class="fig-nr">Figur 2</span> Samme værktøj, modsatte udfald: AI forstærker den fælles forståelse, eller manglen på samme.</figcaption>
       </figure>
 
-      <p>Konsekvensen kan føles ubehagelig: AI reducerer ikke forskellen mellem stærke og svage softwareorganisationer. Den øger den.</p>
+      <p>Konsekvensen kan føles ubehagelig: AI reducerer dermed ikke forskellen mellem stærke og svage softwareorganisationer. Den øger den.</p>
 
-      <p>Det kan lyde som et paradoks, for på individniveau er billedet noget broget: Nogle studier finder, at AI løfter de mindst erfarne udviklere mest, og andre finder at erfarne udviklere sågar bliver langsommere, men samtidig selv oplever det modsatte. Men en organisation er ikke summen af individer, og derfor er det heller ikke hos den enkelte udvikler, svaret skal findes. En organisation med en svag fælles forståelse accelererer ikke kun produktion af kode, men accelererer også produktion af misforståelser, fejlbeslutninger og teknisk gæld. Derfor er "dårligere" ikke kun ment relativt. Teknisk gæld og fejlbeslutninger forrentes: En organisation der producerer dem hurtigere, står om et år med en kodebase, der er målbart sværere at ændre i, end før de fik AI i hænderne. De dårlige bliver ikke bare overhalet. De bliver dårligere.</p>
+      <p>Det kan lyde som et paradoks, for på individniveau er billedet noget broget: Nogle studier finder, at AI løfter de mindst erfarne udviklere mest, og andre finder at erfarne udviklere sågar bliver langsommere, mens de samtidig selv oplever det modsatte. Men en organisation er ikke summen af individer, og derfor er det heller ikke hos den enkelte udvikler, svaret skal findes. En organisation med en svag fælles forståelse accelererer ikke kun produktion af kode, men accelererer også produktion af misforståelser, fejlbeslutninger og teknisk gæld. Derfor er "dårligere" ikke kun ment relativt. Teknisk gæld og fejlbeslutninger forrentes: En organisation der producerer dem hurtigere, står om et år med en kodebase, der er målbart sværere at ændre i, end før de fik AI i hænderne. De dårlige bliver ikke bare overhalet. De bliver dårligere.</p>
 
       <h2>Hvordan skaber vi en fælles forståelse, og hvordan gør vi den eksekverbar?</h2>
 
@@ -260,21 +262,22 @@
           <text class="fig-punkt" x="30" y="276">Eksekverbar af mennesker</text>
           <text class="fig-punkt" x="30" y="296">Eksekverbar af agenter</text>
         </svg>
+        <figcaption><span class="fig-nr">Figur 3</span> Den fælles forståelse omsættes til en eksekverbar model, og læringen løber tilbage igen.</figcaption>
       </figure>
 
-      <p>Idéen om at gøre ens forståelse eksekverbar er heller ikke ny. Automatiserede tests, der beskriver forretningsregler, har eksisteret i årevis under forskellige navne. Det nye er, hvem der handler på dem. Før var modtageren enten et menneske eller en <em>build pipeline</em>. I dag er modtageren en agent, der selv skriver koden, og den agent har kun det der står som kontekst. Det der før levede i hoveder, og blev samlet op henover frokosten, skal skrives ned, hvis agenten skal handle korrekt på det. Derfor bør der i dag stilles helt andre krav til, hvor præcis og dækkende modellen er.</p>
+      <p>Idéen om at gøre ens forståelse eksekverbar er heller ikke ny. Automatiserede tests, der beskriver forretningsregler, har eksisteret i årevis under forskellige navne. Det nye er, hvem der handler på dem. Før var modtageren enten et menneske eller en <em>build pipeline</em>. I dag kan modtageren også være en agent, der selv skriver koden, og den agent har kun det der står som kontekst. Det der før levede i hoveder, og blev samlet op henover frokosten, skal skrives ned, hvis agenten skal handle korrekt på det. Derfor bør der i dag stilles helt andre krav til, hvor præcis og dækkende denne model er.</p>
 
       <p>Men en eksekverbar model er kun den halve løsning. Den vil aldrig blive bedre end den fælles forståelse som den bygger på. En præcis model af det forkerte problem hjælper ingen. Og pilen går begge veje: Hver gang den eksekverbare model møder virkeligheden, opstår der læring, som skal tilbage til den fælles forståelse. Tilsammen danner de to modeller rammen for at forstå, hvor arbejdet flytter hen, når det at skrive koden ikke længere er den primære begrænsning.</p>
 
       <h2>Hvor skabes den næste konkurrencefordel?</h2>
 
-      <p>Efter min opfattelse er svaret <em>forståelse.</em> Forståelse for forretningen, domænet og hvor værdien skabes. Som Brooks påpegede for snart 40 år siden, har den altid været kernen i softwareudvikling. Det nye er, at den ikke længere kan gemme sig bag selve eksekveringen. Så længe den var dyr, druknede forskellen mellem stærk og svag forståelse i omkostningerne. Den undskyldning er væk nu. Når eksekvering er billig, skalerer omkostningen ved misforståelser: En organisation, der eksekverer hurtigt på en forkert forståelse, bygger ikke bedre software. Den bygger det forkerte hurtigere, og betaler for det med teknisk gæld, tilbageløb på leverancerne, tabt <em>time-to-value</em> og forpassede muligheder.</p>
+      <p>Efter min opfattelse er det netop i <em>forståelsen</em>. Forståelse for forretningen, domænet og hvor værdien skabes. Som Brooks pegede på for snart 40 år siden, har den altid været en vigtig del af udviklingen af software. Det nye er, at den ikke længere kan gemme sig bag selve eksekveringen. Så længe den var dyr, druknede forskellen mellem stærk og svag forståelse i omkostningerne. Den undskyldning er væk nu. Når eksekvering er billig, skalerer omkostningen ved misforståelser: En organisation, der eksekverer hurtigt på en forkert forståelse, bygger ikke bedre software. Den bygger det forkerte hurtigere, og betaler for det med teknisk gæld, tilbageløb på leverancerne, tabt <em>time-to-value</em> og forpassede muligheder.</p>
 
-      <p>AI kan være en stærk sparringspartner i arbejdet med at opbygge denne forståelse. Den kan hjælpe med at analysere information, udfordre antagelser, identificere mønstre og gøre viden mere tilgængelig. Den gør det samtidig billigere at eksperimentere og lære af resultaterne. Derfor ligger den egentlige konkurrencefordel ikke i at have den bedste forståelse fra starten, men i evnen til kontinuerligt at opbygge, dele og forbedre den - hurtigere end andre.</p>
+      <p>AI kan dog sagtens være en stærk sparringspartner i arbejdet med at opbygge denne forståelse. Den kan hjælpe med at analysere information, udfordre antagelser, identificere mønstre og gøre viden mere tilgængelig. Den gør det samtidig billigere at eksperimentere og lære af resultaterne. Derfor ligger den egentlige konkurrencefordel ikke nødvendigvis i at have den bedste forståelse fra starten, men i evnen til kontinuerligt at opbygge, dele og forbedre den - hurtigere end konkurrenterne.</p>
 
       <p>Det er netop derfor, de to ovenstående modeller bliver centrale. De er ikke dokumentation for dokumentationens skyld, men de er mekanismer til at opbygge og vedligeholde en fælles forståelse, som gør udviklingsteams i stand til at få markant mere værdi ud af AI.</p>
 
-      <p>I de kommende artikler folder jeg de to modeller ud: først hvordan man bygger en fælles forståelse, der kan deles på tværs af fagligheder, og derefter hvordan man gør den eksekverbar for både mennesker og agenter. For flaskehalsen er flyttet, og intet tyder på, at den flytter sig tilbage.</p>
+      <p>I de kommende artikler folder jeg de to modeller ud: først hvordan man kan bygge en fælles forståelse, der kan deles på tværs af fagligheder, og derefter hvordan man gør den eksekverbar for både mennesker og agenter. For flaskehalsen er flyttet, og intet tyder på, at den flytter sig tilbage.</p>
 
       <!-- MANDAGSTESTEN: Diskret "prøv selv"-markering af artiklens sidste afsnit -->
       <div class="proev-selv">

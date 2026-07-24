@@ -719,6 +719,11 @@ a:hover {
   margin-top: 0.8rem;
 }
 
+.fig-nr {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
 .fig-etiket {
   font-family: var(--skrift-display);
   font-style: italic;
