@@ -716,6 +716,7 @@ a:hover {
 .figur figcaption {
   font-size: 0.8rem;
   color: var(--daemp);
+  text-align: center;
   margin-top: 0.8rem;
 }
 
