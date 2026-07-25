@@ -84,9 +84,12 @@
            herunder. Kilde: tools/eksport/figur-3-flaskehalsen.html -->
       <figure class="figur">
         <!-- Bred variant (vandret) - vises på skærme over 45em -->
-        <svg class="kun-bred" viewBox="0 0 520 200" role="img" aria-labelledby="fig3b-titel fig3b-besk" xmlns="http://www.w3.org/2000/svg">
+        <!-- Indholdet er forskudt let mod venstre, saa selve diagrammet staar
+             centralt i spalten, og Foer/Nu-etiketterne haenger i marginen -->
+        <svg class="kun-bred" style="overflow:visible" viewBox="0 0 520 200" role="img" aria-labelledby="fig3b-titel fig3b-besk" xmlns="http://www.w3.org/2000/svg">
           <title id="fig3b-titel">Flaskehalsen flytter sig</title>
           <desc id="fig3b-besk">Før og nu vist som to strømme af tråde gennem kæden forståelse, beslutninger, implementering og værdi. Før: strømmen er bred hele vejen, men klemmes hårdt sammen ved implementering. Nu: strømmen er klemt allerede ved forståelse og løber bredt resten af vejen. Flaskehalsen er flyttet fra implementering til forståelse.</desc>
+          <g transform="translate(-12 0)">
           <text class="fig-ord" x="90" y="38" text-anchor="middle">Forståelse</text>
           <text class="fig-ord" x="205" y="38" text-anchor="middle">Beslutninger</text>
           <text class="fig-ord-accent" x="330" y="38" text-anchor="middle">Implementering</text>
@@ -121,6 +124,7 @@
             <line x1="90" y1="134" x2="90" y2="145"/>
             <line x1="90" y1="159" x2="90" y2="170"/>
           </g>
+        </g>
         </svg>
         <!-- Smal variant (lodret) - vises på mobil -->
         <svg class="kun-smal" viewBox="0 0 360 214" role="img" aria-labelledby="fig3s-titel fig3s-besk" xmlns="http://www.w3.org/2000/svg">
